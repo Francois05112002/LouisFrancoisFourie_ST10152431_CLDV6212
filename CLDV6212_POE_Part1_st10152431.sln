@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLDV6212_POE_Part1_st10152431", "CLDV6212_POE_Part1_st10152431.csproj", "{EFF9970B-A0B3-4CDE-8DF1-B89B9A5F4FBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLDV6212_POE_Part1_st10152431", "CLDV6212_POE_Part1_st10152431.csproj", "{EFF9970B-A0B3-4CDE-8DF1-B89B9A5F4FBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

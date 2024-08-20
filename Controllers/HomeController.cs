@@ -1,7 +1,5 @@
 using CLDV6212_POE_Part1_st10152431.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc;
-using CLDV6212_POE_Part1_st10152431.Models;
 using CLDV6212_POE_Part1_st10152431.Services;
 using System.Diagnostics;
 using System.Threading.Tasks;
@@ -24,10 +22,27 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
             _fileService = fileService;
         }
 
+
+
         public IActionResult Index()
         {
             return View();
         }
+        public IActionResult AddItem()
+        {
+            return View();
+        }
+        public IActionResult BuyItem()
+        {
+            return View();
+        }
+        public IActionResult CollectItem()
+        {
+            return View();
+        }
+
+
+
 
         [HttpPost]
         public async Task<IActionResult> UploadImage(IFormFile file)

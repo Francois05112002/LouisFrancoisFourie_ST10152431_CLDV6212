@@ -1,0 +1,43 @@
+﻿@page
+@model CLDV6212_POE_Part1_st10152431.Views.Home.AddItemModel
+@{
+}
+<body>
+    <link rel="stylesheet" href="~/StyleSheet.css" />
+    <h1 id="h1"> Add Items </h1>
+
+    <p1>Adding items to your cart at ABC Retail is not only incredibly easy but also highly beneficial for your shopping experience. With just a few clicks, 
+        you can browse our extensive range of products and add items to your cart, allowing you to keep track of everything you’re interested in. This feature 
+        is designed to give you the flexibility to compare products, review your selections, and make informed decisions before finalizing your purchase. 
+        Additionally, adding items to your cart helps you stay organized, especially if you're shopping for multiple people or looking to plan ahead for future 
+        purchases. Your cart also saves your items for later, so even if you’re not ready to buy immediately, you can come back and find everything just as you left it. 
+        Plus, with our easy-to-use interface, managing your cart is a breeze—whether you're adjusting quantities, removing items, or moving products to your wishlist for later. 
+        By making the most of our cart feature, you can streamline your shopping process, ensuring you don’t miss out on any must-have items. 
+        Start adding to your cart today and experience the convenience and control that ABC Retail offers!
+    </p1>
+
+    <div id="imageBox2"><img src="~/images/charlesdeluvio-_4K7BwaHUGc-unsplash.jpg" width="650px" height="450px" /></div>
+
+    <div id="addBox1"> How To Add Items To The Platform ?</div>
+    <div id="addBox2">Capturing and uploading a photo of your product on ABC Retail is a simple process designed to make your shopping experience as seamless as possible. 
+        Here’s a step-by-step guide to help you get started. First, take a clear, well-lit photo of the product using your smartphone or camera, ensuring that all important details are visible. 
+        It’s best to capture the product from multiple angles to give a comprehensive view. Once you have your photos ready, log in to your ABC Retail account and navigate to the 
+        product listing page where you’d like to upload your image. Click on the “Add Photo” button, which will prompt you to either drag and drop your images or browse your device 
+        to select the photos you wish to upload. After selecting the image, you can preview it to ensure it’s the correct file. If everything looks good, click “Upload” to add the photo 
+        to your product listing. The system will automatically adjust the image to fit the required dimensions, and you’ll receive a confirmation once the upload is successful. If you need 
+        to make any changes, you can easily edit or delete the photo through your account. This process is designed to be user-friendly, making it easy for you to showcase your products in 
+        the best possible light on ABC Retail.</div>
+
+    
+
+        <div id="addBox3">Now Its Time To Add !</div>
+    <div id="addFormBox">
+        <form asp-action="UploadImage" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <button type="submit">Upload Image</button>
+        </form>
+    </div>
+        
+
+</body>
+

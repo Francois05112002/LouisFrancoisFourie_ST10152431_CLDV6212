@@ -2,18 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
-<form asp-action="UploadImage" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <button type="submit">Upload Image</button>
-</form>
+@* 
 
-<form asp-action="AddCustomerProfile" method="post">
-    <input type="text" name="FirstName" placeholder="First Name" />
-    <input type="text" name="LastName" placeholder="Last Name" />
-    <input type="email" name="Email" placeholder="Email" />
-    <input type="text" name="PhoneNumber" placeholder="Phone Number" />
-    <button type="submit">Add Profile</button>
-</form>
 
 <form asp-action="ProcessOrder" method="post">
     <input type="text" name="orderId" placeholder="Order ID" />
@@ -23,4 +13,65 @@
 <form asp-action="UploadContract" method="post" enctype="multipart/form-data">
     <input type="file" name="file" />
     <button type="submit">Upload Contract</button>
-</form>
+</form> *@
+
+   
+
+    <body>
+        <link rel="stylesheet" href="~/StyleSheet.css" />
+        <h1>Welcome To ABC Retail</h1>
+
+    <p1>Welcome to ABC Retail, where your shopping experience is our top priority! At ABC Retail, we’re more than just an online store; we’re a community dedicated to bringing 
+        you a wide array of high-quality products that cater to your every need. From the latest fashion trends and cutting-edge electronics to essential home goods and unique 
+        specialty items, we’ve carefully curated our collections to offer something for everyone. Our platform is designed with you in mind, providing a seamless, user-friendly
+        interface that makes finding what you need easier than ever. We pride ourselves on delivering exceptional customer service, with a team always ready to assist you, 
+        whether you have questions about a product or need help with your order. With secure payment options, fast shipping, and a commitment to excellence, ABC Retail is
+        here to ensure that your online shopping experience is smooth, enjoyable, and satisfying. Discover the difference at ABC Retail, where quality meets convenience, and customer
+        satisfaction is our guarantee. Happy shopping!
+    </p1>
+
+    <div id="imageBox1"><img src="~/images/ashim-d-silva-ZmgJiztRHXE-unsplash.jpg" width="750px" height="400px" /></div>
+
+    <div id="indexBox1">Before You Start Shopping</div>
+    <div id="indexBox2"> At ABC Retail, we’re committed to providing you with a personalized shopping experience that’s tailored to your preferences. 
+        To ensure this, we require all our customers to log in before making a purchase. By logging in, you gain access to a range of exclusive features 
+        designed to enhance your shopping journey. This includes the ability to save your favorite items for later, track your order history, and receive 
+        personalized product recommendations based on your past purchases and browsing habits. Logging in also allows us to offer a more secure shopping environment, 
+        protecting your personal information and payment details with the highest levels of encryption and security. Additionally, being logged in ensures a smoother 
+        checkout process, with your saved information allowing for quick and easy transactions. While browsing our collections is always open to everyone, making a purchase 
+        is a privilege reserved for registered users, ensuring that your shopping experience is both safe and seamless. So, take a moment to log in or create an account,
+        and unlock the full potential of what ABC Retail has to offer.</div>
+
+    
+        
+
+
+    <div id="indexBox3">Please Create A Profile</div>
+    <div id="createUser">
+        <form asp-action="AddCustomerProfile" method="post">
+            <div id="userInputSpace">
+                <label for="name">NAME:</label>
+                <input type="text" name="FirstName" />
+            </div>
+            <div id="userInputSpace">
+                <label for="name">SURNAME:</label>
+                <input type="text" name="LastName" />
+            </div>
+            <div id="userInputSpace">
+                <label for="name">E-MAIL:</label>
+                <input type="email" name="Email" />
+            </div>
+            <div id="userInputSpace">
+                <label for="name">PHONE-NUMBER:</label>
+                <input type="text" name="PhoneNumber" />
+            </div>
+            <div id="userInputSpace">
+            <button type="submit">Add Profile</button>
+            </div>
+        </form>
+    </div>
+
+
+    </body>
+
+

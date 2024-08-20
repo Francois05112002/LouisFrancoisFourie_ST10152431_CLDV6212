@@ -1,7 +1,6 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 using CLDV6212_POE_Part1_st10152431.Models;
-using CLDV6212_POE_Part1_st10152431.Models;
 using System.Threading.Tasks;
 
 namespace CLDV6212_POE_Part1_st10152431.Services

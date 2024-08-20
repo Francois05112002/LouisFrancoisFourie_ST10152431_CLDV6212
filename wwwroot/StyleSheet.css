@@ -1,0 +1,142 @@
+﻿body {
+    background-color: #fca26e;
+}
+
+h1 {
+    color: antiquewhite;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color:#2B4F61;
+    padding: 5px;
+    width: 440px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#h1 {
+    color: antiquewhite;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    width: 210px;
+}
+
+#h2 {
+    color: antiquewhite;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    width: 200px;
+}
+
+#h3 {
+    color: antiquewhite;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    width: 260px;
+}
+
+p1 {
+    color: antiquewhite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#indexBox1 {
+    font-size: 30px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    width: 370px;
+    margin-top: 45px;
+    color: antiquewhite;
+    margin-left: 880px;
+}
+
+#indexBox2 {
+    width: 580px;
+    color: antiquewhite;
+    margin-left: 800px;
+    margin-top: 5px;
+    width:45%;
+}
+
+#indexBox3 {
+    font-size: 30px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    width: 320px;
+    margin-top: 45px;
+    color: antiquewhite;
+}
+
+#createUser {
+    color: antiquewhite;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#userInputSpace {
+    margin-top:3px;
+}
+
+#addBox1 {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    color: antiquewhite;
+    font-size:30px;
+    width: 500px;
+    margin-top: 45px;
+}
+
+#addBox2 {
+    width: 580px;
+    color: antiquewhite;
+    margin-top: 5px;
+    width: 45%;
+}
+
+#addBox3 {
+    font-size: 30px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    width: 320px;
+    margin-top: 35px;
+    color: antiquewhite;
+    margin-left: 880px;
+}
+
+#addFormBox {
+    margin-left: 835px;
+    margin-top: 10px;
+}
+
+#imageBox1 {
+    float: left;
+    margin-top: 45px;
+}
+
+#imageBox2 {
+    float: right;
+    margin-top: 60px;
+}
