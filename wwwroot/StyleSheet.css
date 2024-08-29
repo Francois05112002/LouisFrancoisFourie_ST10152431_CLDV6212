@@ -140,3 +140,15 @@ p1 {
     float: right;
     margin-top: 60px;
 }
+
+#buyBox1 {
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    border-color: #2B4F61;
+    padding: 5px;
+    color: antiquewhite;
+    font-size: 30px;
+    width: 640px;
+    margin-top: 750px;
+}
