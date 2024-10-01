@@ -9,6 +9,7 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly HttpClient _client;
         private readonly BlobService _blobService;
         private readonly TableService _tableService;
         private readonly QueueService _queueService;
@@ -64,8 +65,6 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
                 return BadRequest("Failed to store data in the table.");
             }
         }
-
-
         // Uploads image to Azure Blob Storage
         [HttpPost]
         public async Task<IActionResult> UploadBlob()
@@ -78,8 +77,6 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
             Console.WriteLine(await response.Content.ReadAsStringAsync());
             return View("UploadSuccess");
         }
-
-
         // Sends a message to the Azure Queue
         [HttpPost]
         public async Task<IActionResult> AddToQueue()
@@ -93,8 +90,6 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
             Console.WriteLine(result);
             return Content($"Queue response: {result}");
         }
-
-
         // Uploads file to Azure File Share
         [HttpPost]
         public async Task<IActionResult> UploadFile()
