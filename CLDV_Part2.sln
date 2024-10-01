@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLDV_Part2", "CLDV_Part2.csproj", "{4CA42C88-F5E3-4488-A047-252997B47205}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CA42C88-F5E3-4488-A047-252997B47205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA42C88-F5E3-4488-A047-252997B47205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA42C88-F5E3-4488-A047-252997B47205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA42C88-F5E3-4488-A047-252997B47205}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BCDE577-FEBD-4BD4-8133-8FF2ABEF6E45}
+	EndGlobalSection
+EndGlobal
