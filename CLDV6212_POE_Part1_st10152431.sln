@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLDV6212_POE_Part1_st10152431", "CLDV6212_POE_Part1_st10152431.csproj", "{EFF9970B-A0B3-4CDE-8DF1-B89B9A5F4FBD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLDV_Part2", "..\CLDV_Part2\CLDV_Part2.csproj", "{12FCB9C7-E8BC-4938-8DC7-5EB6597B120B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EFF9970B-A0B3-4CDE-8DF1-B89B9A5F4FBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFF9970B-A0B3-4CDE-8DF1-B89B9A5F4FBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFF9970B-A0B3-4CDE-8DF1-B89B9A5F4FBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12FCB9C7-E8BC-4938-8DC7-5EB6597B120B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12FCB9C7-E8BC-4938-8DC7-5EB6597B120B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12FCB9C7-E8BC-4938-8DC7-5EB6597B120B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12FCB9C7-E8BC-4938-8DC7-5EB6597B120B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
