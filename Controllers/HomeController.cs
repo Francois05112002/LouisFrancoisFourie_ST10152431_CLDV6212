@@ -15,12 +15,13 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
         private readonly QueueService _queueService;
         private readonly FileService _fileService;
 
-        public HomeController(BlobService blobService, TableService tableService, QueueService queueService, FileService fileService)
+        public HomeController(BlobService blobService, TableService tableService, QueueService queueService, FileService fileService, IHttpClientFactory httpClientFactory)
         {
             _blobService = blobService;
             _tableService = tableService;
             _queueService = queueService;
             _fileService = fileService;
+            _client = httpClientFactory.CreateClient();
         }
 
 
