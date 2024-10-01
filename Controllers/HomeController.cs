@@ -45,52 +45,68 @@ namespace CLDV6212_POE_Part1_st10152431.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> AddCustomerProfile(CustomerProfile profile)
+        public async Task<IActionResult> StoreTableInfo()
         {
-            if (ModelState.IsValid)
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post,
+                "https://st10152431function.azurewebsites.net/api/StoreTableInfo?code=ndGkVLJN350Q1GYFBbHfiEpwgsPEsc7zvWLxAfDZ5VyNAzFuARgPMg%3D%3D&tableName=CustomerProfiles&partitionKey=1&rowKey=1&data=1");
+            try
             {
-                await _tableService.AddEntityAsync(profile);
-                ViewBag.Message = "Customer profile added successfully!";
+                var response = await client.SendAsync(request);
+                response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(result);
+                return Content(result); // Returning the response to the view.
             }
-            return View("Index", profile);
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return BadRequest("Failed to store data in the table.");
+            }
         }
+
 
         // Uploads image to Azure Blob Storage
         [HttpPost]
-        public async Task<IActionResult> UploadImage(IFormFile file)
+        public async Task<IActionResult> UploadBlob()
         {
-            if (file != null && file.Length > 0)
-            {
-                using var stream = file.OpenReadStream();
-                await _blobService.UploadBlobAsync("product-images", file.FileName, stream);
-                ViewBag.Message = "Image uploaded successfully!";
-            }
-            return View("Index");
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post,
+                "https://st10152431function.azurewebsites.net/api/UploadBlob?code=Dpf29HYjLPUBja2koDiFPOZeMW3Xjtp3UPhCmjY2XiUlAzFuK00T9Q%3D%3D&containerName=product-images&blobName=fjksdnjkfnsdjkfs");
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            Console.WriteLine(await response.Content.ReadAsStringAsync());
+            return View("UploadSuccess");
         }
+
 
         // Sends a message to the Azure Queue
         [HttpPost]
-        public async Task<IActionResult> ProcessOrder(string orderId)
+        public async Task<IActionResult> AddToQueue()
         {
-            if (!string.IsNullOrEmpty(orderId))
-            {
-                await _queueService.SendMessageAsync("order-processing", $"Processing order {orderId}");
-                ViewBag.Message = "Order processed successfully!";
-            }
-            return View("Index");
+            var client = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post,
+                "https://st10152431function.azurewebsites.net/api/ProcessQueueMessage?code=5qD3iuTjxjEPAO9i44O0Kiqsx_HRzKkL7pJCe0TFJJuTAzFusZuwtA%3D%3D&queueName=order-processing&message=fnsnsklnflksdnlgks");
+            var response = await client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var result = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(result);
+            return Content($"Queue response: {result}");
         }
+
 
         // Uploads file to Azure File Share
         [HttpPost]
-        public async Task<IActionResult> UploadFileToAzure(IFormFile file)
+        public async Task<IActionResult> UploadFile()
         {
-            if (file != null && file.Length > 0)
-            {
-                using var stream = file.OpenReadStream();
-                await _fileService.UploadFileAsync("fileshare", file.FileName, stream);
-                ViewBag.Message = "File uploaded successfully!";
-            }
-            return View("Index");
+       
+            var requestUrl = "https://st10152431function.azurewebsites.net/api/UploadFile?code=7dE19YK2_At34E57e77L7zlWD7NsXNIMKdbEp4d_mC4XAzFufeC6Dg%3D%3D&fileName=nsdjsdnjknfsd";
+            var request = new HttpRequestMessage(HttpMethod.Post, requestUrl);
+            var response = await _client.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+            var result = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(result);
+            return Content("File upload was successful.");
         }
     }
 }
